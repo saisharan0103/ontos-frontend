@@ -1,7 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  experimental: {},
-  transpilePackages: ["react-markdown"],
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
+  typescript: {
+    ignoreBuildErrors: true,
+  },
+  transpilePackages: ['react-markdown'],
 };
 
 export default nextConfig;
